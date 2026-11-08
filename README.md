@@ -1,5 +1,9 @@
 # Exam Workspace — กระดาษคำตอบ + Annotation
 
+## ลิงก์
+- เว็บแอป: https://pat2-quiz.vercel.app
+- GitHub: https://github.com/phatphumt/pat2-quiz
+
 เว็บแอปสำหรับอ่านโจทย์จาก PDF ทำข้อสอบแบบ OMR และจดโน้ตบนหน้าเอกสาร เขียนด้วย **Vanilla HTML/CSS/JS** ไม่ต้อง build ไม่ต้องติดตั้ง dependency (ใช้ PDF.js แบบ vendor ไว้ในโปรเจกต์) มาพร้อมไฟล์ตัวอย่าง PAT2 ชีววิทยา (`pdf/source.pdf` + `pages/`) แต่ใช้กับ PDF/เฉลยชุดอื่นได้
 
 ## เปิดใช้งาน
