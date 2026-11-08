@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f2eee5" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <title>กระดาษคำตอบ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V11"/><path d="M11 11V4.5a1.5 1.5 0 0 1 3 0V11"/><path d="M14 11V6a1.5 1.5 0 0 1 3 0v7"/><path d="M17 9.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-1.5a6 6 0 0 1-4.2-1.8L5 15.5a1.6 1.6 0 0 1 2.3-2.2L8 14"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="m4 20 4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20Z"/><path d="m13.5 6.5 4 4"/></symbol>
+    <symbol id="i-highlighter" viewBox="0 0 24 24"><path d="m14 5 5 5-7 7H7l-2-2 9-10Z"/><path d="M9 10 15 16"/><path d="M5 19h6"/></symbol>
+    <symbol id="i-eraser" viewBox="0 0 24 24"><path d="m14 5 5 5-8 8H6l-2-2 10-11Z"/><path d="M9 10 15 16"/><path d="M4 21h16"/></symbol>
+    <symbol id="i-undo" viewBox="0 0 24 24"><path d="M9 7 4 12l5 5"/><path d="M4 12h9a5 5 0 0 1 0 10h-2"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="m15 7 5 5-5 5"/><path d="M20 12h-9a5 5 0 0 0 0 10h2"/></symbol>
+    <symbol id="i-clear-page" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6V3Z"/><path d="M15 3v4h4"/><path d="m9.5 12 5 5"/><path d="m14.5 12-5 5"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M9 7V4h6v3"/><path d="m6 7 1 14h10l1-14"/><path d="M10 11v6"/><path d="M14 11v6"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-zoom-in" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/><path d="M10.5 7.5v6"/><path d="M7.5 10.5h6"/></symbol>
+    <symbol id="i-zoom-out" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/><path d="M7.5 10.5h6"/></symbol>
+    <symbol id="i-fit" viewBox="0 0 24 24"><path d="M4 7V4h3"/><path d="M17 4h3v3"/><path d="M20 17v3h-3"/><path d="M7 20H4v-3"/><path d="M7 12h10"/><path d="m9 9-3 3 3 3"/><path d="m15 9 3 3-3 3"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M5 15v4h14v-4"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 11a8 8 0 1 1 2.3 6.7"/><path d="M4 4v7h7"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="m20 4-8 8"/><path d="M18 14v5H5V6h5"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17v3Z"/><path d="m14 6 4 4"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.8 2.2c-.8.5-1.3 1-1.3 2.1"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12"/><path d="m18 6-12 12"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></symbol>
+  </svg>
+
+  <header class="app-bar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#i-book"></use></svg></span>
+      <div class="brand-text">
+        <h1 id="examTitle">ชุดข้อสอบ</h1>
+        <p class="sub" id="examSubtitle">อ่านโจทย์ ทำข้อสอบ และตรวจคำตอบ</p>
+      </div>
+    </div>
+    <div class="app-actions">
+      <span id="saveChip" class="save-chip hidden" aria-live="polite"><span class="save-dot"></span>บันทึกแล้ว</span>
+      <span id="docChip" class="chip" title="เอกสาร">กำลังโหลด…</span>
+      <a id="openPdfLink" class="btn ghost small external-btn" href="pdf/source.pdf" target="_blank" rel="noopener" title="เปิด PDF ตัวอย่าง">
+        <svg class="icon"><use href="#i-external"></use></svg><span>เปิด PDF</span>
+      </a>
+      <button class="icon-btn" id="editExamBtn" type="button" title="แก้ไขชื่อชุดข้อสอบ" aria-label="แก้ไขชื่อชุดข้อสอบ">
+        <svg class="icon"><use href="#i-edit"></use></svg>
+      </button>
+      <button class="icon-btn" id="helpBtn" type="button" title="คีย์ลัด (?)" aria-label="ดูคีย์ลัด">
+        <svg class="icon"><use href="#i-help"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-tabs" role="tablist" aria-label="สลับมุมมอง">
+    <button class="tab active" data-tab="pdf" role="tab" aria-selected="true">ข้อสอบ</button>
+    <button class="tab" data-tab="sheet" role="tab" aria-selected="false">กระดาษคำตอบ</button>
+  </div>
+
+  <main class="layout">
+    <section id="pdfPanel" class="panel pdf-panel active-panel" aria-label="ข้อสอบ">
+      <div class="toolbar doc-toolbar">
+        <div class="toolbar-group">
+          <button class="icon-btn" id="prevPage" type="button" title="หน้าก่อน (PgUp)" aria-label="หน้าก่อน">
+            <svg class="icon"><use href="#i-chevron-left"></use></svg>
+          </button>
+          <label class="page-jump" for="pageInput">
+            <span>หน้า</span>
+            <input id="pageInput" type="number" min="1" value="1" inputmode="numeric" aria-label="เลขหน้า" />
+            <span id="pageTotal" class="page-total">/ —</span>
+          </label>
+          <button class="icon-btn" id="nextPage" type="button" title="หน้าถัดไป (PgDn)" aria-label="หน้าถัดไป">
+            <svg class="icon"><use href="#i-chevron-right"></use></svg>
+          </button>
+        </div>
+
+        <span class="toolbar-sep" aria-hidden="true"></span>
+
+        <div class="toolbar-group">
+          <button class="icon-btn" id="zoomOut" type="button" title="ย่อ (Ctrl+-)" aria-label="ย่อ">
+            <svg class="icon"><use href="#i-zoom-out"></use></svg>
+          </button>
+          <span id="zoomInfo" class="zoom-label">พอดี</span>
+          <button class="icon-btn" id="zoomIn" type="button" title="ขยาย (Ctrl++)" aria-label="ขยาย">
+            <svg class="icon"><use href="#i-zoom-in"></use></svg>
+          </button>
+          <button class="btn small ghost fit-btn" id="fitWidth" type="button" title="พอดีความกว้าง">
+            <svg class="icon"><use href="#i-fit"></use></svg><span>พอดี</span>
+          </button>
+        </div>
+
+        <span class="toolbar-spacer"></span>
+
+        <div class="toolbar-group">
+          <button class="btn small" id="uploadPdfBtn" type="button">
+            <svg class="icon"><use href="#i-upload"></use></svg><span>อัปโหลด PDF</span>
+          </button>
+          <button class="icon-btn" id="resetPdfBtn" type="button" title="ใช้ไฟล์ตัวอย่าง" aria-label="ใช้ไฟล์ตัวอย่าง">
+            <svg class="icon"><use href="#i-reset"></use></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="toolbar tools-toolbar" id="inkTools">
+        <div class="tool-group" role="group" aria-label="เครื่องมือวาด">
+          <button class="tool icon-btn active" type="button" data-tool="hand" aria-pressed="true" title="มือ / เลื่อนหน้า (V)" aria-label="เครื่องมือมือ"><svg class="icon"><use href="#i-hand"></use></svg></button>
+          <button class="tool icon-btn" type="button" data-tool="pen" aria-pressed="false" title="ปากกา (P)" aria-label="เครื่องมือปากกา"><svg class="icon"><use href="#i-pen"></use></svg></button>
+          <button class="tool icon-btn" type="button" data-tool="hl" aria-pressed="false" title="ไฮไลต์ (H)" aria-label="เครื่องมือไฮไลต์"><svg class="icon"><use href="#i-highlighter"></use></svg></button>
+          <button class="tool icon-btn" type="button" data-tool="eraser" aria-pressed="false" title="ยางลบ (E)" aria-label="เครื่องมือยางลบ"><svg class="icon"><use href="#i-eraser"></use></svg></button>
+        </div>
+
+        <span class="toolbar-sep" aria-hidden="true"></span>
+
+        <div class="swatch-group" id="swatches" role="group" aria-label="สีปากกา">
+          <button class="swatch" type="button" data-color="#dc2626" style="--c:#dc2626" aria-label="สีแดง" aria-pressed="false"></button>
+          <button class="swatch" type="button" data-color="#1d4ed8" style="--c:#1d4ed8" aria-label="สีน้ำเงิน" aria-pressed="false"></button>
+          <button class="swatch" type="button" data-color="#111827" style="--c:#111827" aria-label="สีดำ" aria-pressed="false"></button>
+          <button class="swatch" type="button" data-color="#15803d" style="--c:#15803d" aria-label="สีเขียว" aria-pressed="false"></button>
+          <button class="swatch" type="button" data-color="#f59e0b" style="--c:#f59e0b" aria-label="สีเหลืองส้ม" aria-pressed="false"></button>
+          <button class="swatch" type="button" data-color="#7c3aed" style="--c:#7c3aed" aria-label="สีม่วง" aria-pressed="false"></button>
+        </div>
+
+        <div class="size-control" role="group" aria-label="ขนาดเครื่องมือ">
+          <span class="size-label">ขนาด</span>
+          <button class="icon-btn tiny" id="sizeDown" type="button" title="ลดขนาด ([)" aria-label="ลดขนาด">−</button>
+          <span id="sizeVal" class="size-val">3</span>
+          <button class="icon-btn tiny" id="sizeUp" type="button" title="เพิ่มขนาด (])" aria-label="เพิ่มขนาด">+</button>
+        </div>
+
+        <span class="toolbar-sep" aria-hidden="true"></span>
+
+        <div class="toolbar-group">
+          <button class="icon-btn" id="undoBtn" type="button" title="เลิกทำ (Ctrl+Z)" aria-label="เลิกทำ" disabled>
+            <svg class="icon"><use href="#i-undo"></use></svg>
+          </button>
+          <button class="icon-btn" id="redoBtn" type="button" title="ทำซ้ำ (Ctrl+Y)" aria-label="ทำซ้ำ" disabled>
+            <svg class="icon"><use href="#i-redo"></use></svg>
+          </button>
+          <button class="icon-btn" id="clearPageBtn" type="button" title="ล้างลายเส้นหน้านี้" aria-label="ล้างลายเส้นหน้านี้">
+            <svg class="icon"><use href="#i-clear-page"></use></svg>
+          </button>
+          <button class="icon-btn" id="clearInkBtn" type="button" title="ล้างลายเส้นทั้งหมด" aria-label="ล้างลายเส้นทั้งหมด">
+            <svg class="icon"><use href="#i-trash"></use></svg>
+          </button>
+        </div>
+
+        <span class="toolbar-spacer"></span>
+
+        <label class="chk"><input type="checkbox" id="fingerToggle" /> วาดด้วยนิ้ว</label>
+      </div>
+
+      <div class="pdf-scroll" id="pdfScroll">
+        <div id="pdfStatus" class="pdf-status hidden" aria-live="polite"></div>
+        <div id="pageStack" class="page-stack"></div>
+      </div>
+    </section>
+
+    <section id="sheetPanel" class="panel sheet-panel" aria-label="กระดาษคำตอบ">
+      <div class="answer-sheet">
+        <div class="sheet-head">
+          <div class="sheet-heading">
+            <div>
+              <div class="sheet-title">กระดาษคำตอบ</div>
+              <div class="sheet-subject" id="sheetSubject">อ่านโจทย์ ทำข้อสอบ และตรวจคำตอบ</div>
+            </div>
+            <div class="progress-wrap" aria-live="polite">
+              <span id="progressLabel" class="progress-label">0 / —</span>
+              <div class="progress-track" role="progressbar" aria-label="ความคืบหน้าการตอบ" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0" id="progressTrack">
+                <div id="progressBar" class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sheet-meta">
+            <label>ชื่อ–สกุล <input id="studentName" type="text" placeholder="ระบุชื่อ (ไม่บังคับ)" autocomplete="off" /></label>
+            <label>วันที่ <input id="examDate" type="text" autocomplete="off" /></label>
+          </div>
+
+          <div class="key-bar">
+            <span id="keyInfo" class="key-info">เฉลย: กำลังโหลด…</span>
+            <button class="btn small" id="uploadKeyBtn" type="button">
+              <svg class="icon"><use href="#i-upload"></use></svg><span>อัปโหลดเฉลย</span>
+            </button>
+            <button class="btn small ghost" id="resetKeyBtn" type="button">คืนค่าเฉลยเริ่มต้น</button>
+          </div>
+        </div>
+
+        <div id="omrGrid" class="omr-grid" aria-label="เลือกคำตอบ"></div>
+
+        <div id="resultBox" class="result hidden" aria-live="polite"></div>
+
+        <div class="sheet-footer">
+          <div class="sheet-status">
+            <span id="statusText" class="status">ตอบแล้ว 0 / —</span>
+            <span id="scoreChip" class="score-chip hidden"></span>
+          </div>
+          <div class="actions">
+            <button class="btn small ghost" id="nextBlankBtn" type="button">ข้อถัดไปที่ยังว่าง</button>
+            <button class="btn small" id="clearBtn" type="button">ล้างคำตอบ</button>
+            <button class="btn primary" id="submitBtn" type="button">ตรวจคำตอบ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="false"></div>
+
+  <dialog id="examDialog" class="dialog" aria-labelledby="examDialogTitle">
+    <form id="examForm">
+      <div class="dialog-head">
+        <h2 id="examDialogTitle">ข้อมูลชุดข้อสอบ</h2>
+        <button class="icon-btn" type="button" id="examClose" aria-label="ปิด">
+          <svg class="icon"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <div class="field">
+          <label for="examTitleInput">ชื่อชุดข้อสอบ</label>
+          <input id="examTitleInput" type="text" maxlength="80" autocomplete="off" placeholder="เช่น ชุดข้อสอบชีววิทยา" />
+        </div>
+        <div class="field">
+          <label for="examSubtitleInput">คำอธิบาย / วิชา</label>
+          <input id="examSubtitleInput" type="text" maxlength="140" autocomplete="off" placeholder="เช่น บทที่ 4 · การสังเคราะห์ด้วยแสง" />
+        </div>
+        <p class="field-hint">ชื่อและคำอธิบายนี้จะแสดงบนหัวแอปและกระดาษคำตอบ</p>
+      </div>
+      <div class="dialog-foot">
+        <button class="btn small ghost" type="button" id="examCancel">ยกเลิก</button>
+        <button class="btn primary" type="submit">บันทึก</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="helpDialog" class="dialog" aria-labelledby="helpTitle">
+    <div class="dialog-head">
+      <h2 id="helpTitle">คีย์ลัด</h2>
+      <button class="icon-btn" type="button" id="helpClose" aria-label="ปิด">
+        <svg class="icon"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+    <div class="dialog-body">
+      <dl class="shortcut-list">
+        <div><dt><kbd>V</kbd></dt><dd>มือ / เลื่อนหน้า</dd></div>
+        <div><dt><kbd>P</kbd></dt><dd>ปากกา</dd></div>
+        <div><dt><kbd>H</kbd></dt><dd>ไฮไลต์</dd></div>
+        <div><dt><kbd>E</kbd></dt><dd>ยางลบ</dd></div>
+        <div><dt><kbd>Esc</kbd></dt><dd>กลับไปเครื่องมือมือ</dd></div>
+        <div><dt><kbd>[</kbd> <kbd>]</kbd></dt><dd>ลด / เพิ่มขนาดเครื่องมือ</dd></div>
+        <div><dt><kbd>PgUp</kbd> <kbd>PgDn</kbd></dt><dd>หน้าก่อน / หน้าถัดไป</dd></div>
+        <div><dt><kbd>Ctrl</kbd> + <kbd>+</kbd> / <kbd>−</kbd></dt><dd>ซูมเข้า / ออก</dd></div>
+        <div><dt><kbd>Ctrl</kbd> + <kbd>Z</kbd></dt><dd>เลิกทำ</dd></div>
+        <div><dt><kbd>Ctrl</kbd> + <kbd>Y</kbd></dt><dd>ทำซ้ำ</dd></div>
+        <div><dt><kbd>?</kbd></dt><dd>เปิดหน้าต่างคีย์ลัด</dd></div>
+      </dl>
+    </div>
+    <div class="dialog-foot">
+      <button class="btn primary" type="button" id="helpDone">เข้าใจแล้ว</button>
+    </div>
+  </dialog>
+
+  <input type="file" id="pdfFile" accept="application/pdf,.pdf" hidden />
+  <input type="file" id="keyFile" accept="application/json,.json" hidden />
+
+  <script src="vendor/pdfjs/pdf.min.js"></script>
+  <script src="data/default-key.js"></script>
+  <script src="pdf-loader.js"></script>
+  <script src="ink.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
